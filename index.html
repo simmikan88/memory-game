@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Memory Game</h1>
+
+<div id="stats">
+    Moves: <span id="moves">0</span>
+    |
+    Time: <span id="timer">0</span>s
+</div>
+
+<div class="game-layout">
+
+```
+<div class="gif-column">
+
+    <img src="gifs/left1.gif" class="side-gif" alt="">
+    <img src="gifs/left2.gif" class="side-gif" alt="">
+    <img src="gifs/left3.gif" class="side-gif" alt="">
+    <img src="gifs/left4.gif" class="side-gif" alt="">
+
+</div>
+
+<div class="game-column">
+
+    <div class="game-container">
+
+        <div id="game-board"></div>
+
+        <div id="victory-overlay">
+
+            <img
+                src="gifs/victory.gif"
+                id="victory-gif"
+                alt="Victory">
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="gif-column">
+
+    <img src="gifs/right1.gif" class="side-gif" alt="">
+    <img src="gifs/right2.gif" class="side-gif" alt="">
+    <img src="gifs/right3.gif" class="side-gif" alt="">
+    <img src="gifs/right4.gif" class="side-gif" alt="">
+
+</div>
+```
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
