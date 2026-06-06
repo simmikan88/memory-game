@@ -2,47 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Game</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Memory Game</h1>
+<h1>Memory Game</h1>
 
-    <div id="stats">
-        Moves: <span id="moves">0</span>
-        |
-        Time: <span id="timer">0</span>s
-    </div>
+<div id="stats">
+    Moves: <span id="moves">0</span>
+    |
+    Time: <span id="timer">0</span>s
+</div>
 
-    <div class="game-layout">
+<div class="game-layout">
 
-        <div class="gif-column">
-            <img
-                src="gifs/left.gif"
-                alt="Left Animation"
-                class="side-gif">
-        </div>
+    <!-- LEFT COLUMN -->
 
-        <div class="game-column">
-            <div id="game-board"></div>
-        </div>
+    <div class="gif-column">
 
-        <div class="gif-column">
-            <img
-                src="gifs/right.gif"
-                alt="Right Animation"
-                class="side-gif">
-        </div>
+        <img src="gifs/left1.gif" class="side-gif">
+        <img src="gifs/left2.gif" class="side-gif">
+        <img src="gifs/left3.gif" class="side-gif">
+        <img src="gifs/left4.gif" class="side-gif">
 
     </div>
 
-    <script src="script.js"></script>
+    <!-- MEMORY GAME -->
+
+    <div class="game-column">
+
+        <div id="game-board"></div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+
+    <div class="gif-column">
+
+        <img src="gifs/right1.gif" class="side-gif">
+        <img src="gifs/right2.gif" class="side-gif">
+        <img src="gifs/right3.gif" class="side-gif">
+        <img src="gifs/right4.gif" class="side-gif">
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
