@@ -1,0 +1,174 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f4f4;
+
+    text-align: center;
+
+    margin: 0;
+
+    padding: 20px;
+}
+
+h1 {
+
+    margin-bottom: 10px;
+}
+
+#stats {
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* MAIN PAGE LAYOUT */
+
+.game-layout {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    max-width: 1900px;
+
+    margin: auto;
+}
+
+/* GIF COLUMNS */
+
+.gif-column {
+
+    width: 220px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+.side-gif {
+
+    width: 100%;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+/* MEMORY GAME */
+
+.game-column {
+
+    flex: 0 0 auto;
+}
+
+#game-board {
+
+    width: 900px;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 10px;
+}
+
+.card {
+
+    position: relative;
+
+    aspect-ratio: 1 / 1;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background: #333;
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.hidden img {
+
+    display: none;
+}
+
+.hidden {
+
+    background-image: url("images/card-back.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.matched {
+
+    opacity: 0.85;
+
+    cursor: default;
+}
+
+/* TABLET & MOBILE */
+
+@media (max-width: 1500px) {
+
+    .game-layout {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .gif-column {
+
+        flex-direction: row;
+
+        width: 100%;
+
+        max-width: 900px;
+
+        justify-content: center;
+    }
+
+    .side-gif {
+
+        width: 22%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #game-board {
+
+        width: 100%;
+    }
+
+    .gif-column {
+
+        flex-wrap: wrap;
+    }
+
+    .side-gif {
+
+        width: 45%;
+    }
+}
